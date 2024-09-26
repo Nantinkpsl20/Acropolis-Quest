@@ -45,7 +45,7 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(237, 34);
             this.name.TabIndex = 1;
-            this.name.Text = "name";
+            this.name.Text = "fullname";
             this.name.Click += new System.EventHandler(this.name_Click);
             this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
@@ -128,6 +128,7 @@
             this.Name = "registrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "registrationForm";
+            this.Load += new System.EventHandler(this.registrationForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

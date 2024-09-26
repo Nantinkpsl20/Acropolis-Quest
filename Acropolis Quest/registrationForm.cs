@@ -22,7 +22,7 @@ namespace Acropolis_Quest
 
         }
 
-        private string initialNf = "name";
+        private string initialNf = "fullname";
         private string initialUf = "username";
         private string initialPf = "password";
         private string initialCPf = "confirm password";
@@ -56,7 +56,7 @@ namespace Acropolis_Quest
         private void name_Click(object sender, EventArgs e)
         {
             //check for initial value to change into empty
-            if (name.Text == "name"
+            if (name.Text == initialNf
                 && username.ForeColor == Color.Gray)
             {
                 name.Text = string.Empty;
@@ -130,6 +130,11 @@ namespace Acropolis_Quest
         private void registerBtn_Click(object sender, EventArgs e)
         {
             checkFields(sender, e);
+        }
+
+        private void registrationForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
